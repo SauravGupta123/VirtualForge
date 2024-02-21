@@ -7,26 +7,32 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
-
+import video from '../public/video.mp4'
 const App = () => {
   return (
     <div>
+
       <Cursor />
-      <section id="Homepage">
+      <section className="homepage" id="Homepage">
+        <video src={video} autoPlay muted className="video" />
         <Navbar />
-        <Hero />
+        <Hero className="hero" />
       </section>
-      <section id="Services">
+
+
+
+      {/* <section id="Services">
         <Parallax type="services" />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <Services />
-      </section>
-      <section id="Portfolio">
+      </section> */}
+      <section className="zidx" id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-      <Portfolio />
-      <section id="Contact">
+        <Portfolio />
+      
+      <section className="zidx" id="Contact">
         <Contact />
       </section>
       {/* Framer Motion Crash Course */}

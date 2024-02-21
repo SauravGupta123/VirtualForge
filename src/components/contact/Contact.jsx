@@ -55,14 +55,14 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Riders Republic™</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
+          <h2>UBISOFT</h2>
           <span>hello@react.dev</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>$39.99</h2>
+          {/* <span>Hello street New York</span> */}
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
@@ -106,10 +106,26 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
+          <select required name="country">
+            <option value="" disabled selected>Select Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            {/* Add more options as needed */}
+          </select>
+          <select required name="stream">
+            <option value="" disabled selected>Select Stream</option>
+            <option value="stream1">Stream 1</option>
+            <option value="stream2">Stream 2</option>
+            {/* Add more options as needed */}
+          </select>
+          <select required name="edition">
+            <option value="" disabled selected>Select Edition</option>
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            {/* Add more options as needed */}
+          </select>
+          {/* <textarea rows={8} placeholder="Message" name="message"/> */}
+          <button>Purchase</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>

@@ -1,6 +1,7 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 
+
 const textVariants = {
   initial: {
     x: -500,
@@ -40,6 +41,7 @@ const sliderVariants = {
 const Hero = () => {
   return (
     <div className="hero">
+      
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -47,16 +49,18 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h2 variants={textVariants}>Skate</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+           Build By Developers For The Developers
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
+          {/* <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
+          </motion.div> */}
+
+          {/* scroll image of the screen */}
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -65,17 +69,15 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Writer Content Creator Influencer
-      </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="" />
-      </div>
+      </motion.div> */}
+     
     </div>
   );
 };

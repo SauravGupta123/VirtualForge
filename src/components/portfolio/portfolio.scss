@@ -2,6 +2,8 @@
 
 .portfolio {
   position: relative;
+  background:linear-gradient(180deg, #111132, #0c0c1d);
+  padding-bottom: 100px;
 
   .progress {
     position: sticky;
@@ -11,6 +13,7 @@
     text-align: center;
     color: orange;
     font-size: 36px;
+   
 
     @include mobile {
       padding-top: calc(100vh - 100px);

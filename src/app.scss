@@ -27,6 +27,30 @@ section {
   overflow: hidden;
 }
 
+.homepage .zidx{
+position: relative;
+z-index: 1;
+}
+
+
+
+
+
+.video {
+  position: fixed; /* Change from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Change to negative z-index to move it behind other content */
+}
+
+.hero {
+  position: relative; /* Ensure the hero section stays on top */
+  z-index: 2; /* Ensure the hero section stays on top */
+}
+
 @mixin mobile {
   @media (max-width: 738px) {
     @content;

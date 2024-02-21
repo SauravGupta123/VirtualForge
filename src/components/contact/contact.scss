@@ -2,11 +2,12 @@
 
 .contact {
   height: 100%;
-  max-width: 1366px;
+  max-width: 100vw;
   margin: auto;
   display: flex;
   align-items: center;
   gap: 50px;
+  background:linear-gradient(180deg, #111132, #0c0c1d);
 
   @include mobile {
     width: 100%;
@@ -18,6 +19,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-left:100px;
     gap: 40px;
 
     @include mobile {
@@ -44,6 +46,8 @@
   .formContainer {
     flex: 1;
     position: relative;
+    margin-right: 80px;
+    max-width: 35rem;
     
     @include mobile {
       padding: 50px;
