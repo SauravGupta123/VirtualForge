@@ -49,7 +49,8 @@
 
       .imageContainer {
         flex: 1;
-        height: 50%;
+        height: 70%;
+        width: 10px;
 
         @include mobile {
           width: 100%;

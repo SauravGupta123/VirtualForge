@@ -1,6 +1,7 @@
 @import "../../app.scss";
 
 .hero {
+ color:#222233;
   height: calc(100vh - 100px);
   overflow: hidden;
   background: none;
@@ -24,6 +25,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      
 
       @include mobile {
         height: 50%;
