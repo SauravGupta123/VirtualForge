@@ -58,7 +58,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Riders Republic™</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>UBISOFT</h2>
-          <span>hello@react.dev</span>
+        
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>$39.99</h2>
