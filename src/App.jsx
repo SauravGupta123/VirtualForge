@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import Footer from "./components/footer/footer";
 import video from '../public/video.mp4'
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Cursor />
       <section className="homepage" id="Homepage">
         <video src={video} autoPlay muted className="video" />
-        <Navbar />
+        <Navbar/>
         <Hero className="hero" />
       </section>
 
@@ -24,9 +25,7 @@ const App = () => {
       {/* <section id="Services">
         <Parallax type="services" />
       </section> */}
-      {/* <section>
-        <Services />
-      </section> */}
+      
       <section className="zidx" id="Portfolio">
         <Parallax type="portfolio" />
       </section>
@@ -38,6 +37,14 @@ const App = () => {
       {/* Framer Motion Crash Course */}
       {/* <Test/>
     <Test/> */}
+
+
+    <section>
+        <Services />
+        
+      </section>
+
+    
     </div>
   );
 };
