@@ -24,13 +24,17 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
+
+      <div className="heroText">
+
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "Deep Dive To Skate" : "Explore"}
+        Explore 
       </motion.h1>
 
-      <motion.h3 style={{ y: yText }}>
+      <motion.h3 style={{ y: yBg }}>
          "Electrify your gaming Experience"
       </motion.h3>
+      </div>
 
       <motion.div className="mountains"></motion.div>
       <motion.div

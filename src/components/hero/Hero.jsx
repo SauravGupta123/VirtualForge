@@ -44,7 +44,7 @@ const Hero = () => {
       
       <div className="wrapper">
         <motion.div
-          className="textContainer"
+          className="textContainer "
           variants={textVariants}
           initial="initial"
           animate="animate"
