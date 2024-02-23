@@ -7,7 +7,6 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
-import Footer from "./components/footer/footer";
 import video from '../public/video.mp4'
 const App = () => {
   return (

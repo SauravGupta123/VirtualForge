@@ -2,7 +2,7 @@ import { useRef ,useState} from "react";
 import "./services.scss";
 import promoImg from '../../../public/community.jpg'
 import { motion, useInView } from "framer-motion";
-import Footer from "../footer/footer";
+
 const variants = {
   initial: {
     x: -100,
