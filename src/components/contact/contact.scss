@@ -5,9 +5,30 @@
   max-width: 100vw;
   margin: auto;
   display: flex;
-  align-items: center;
-  gap: 50px;
+  font-family: teko,sans-serif;
+    
+
+  
+  // align-items: center;
+  // gap: 50px;
   background:linear-gradient(180deg, #111132, #0c0c1d);
+  h1{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+  // font-weight: <weight>;
+    font-style: normal;
+  }
+
+ 
+.imgContainer{
+  width:20rem;
+  height:25em;
+}
+  .poster{
+    height: 100%;
+    width:100%;
+  
+  }
 
   @include mobile {
     width: 100%;
@@ -16,12 +37,15 @@
   }
 
   .textContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-left:100px;
-    gap: 40px;
-
+    // flex: 1;
+    // display: flex;
+    // flex-direction: column;
+    // margin-left:100px;
+    // gap: 40px;
+    // margin-bottom: 100px;
+   height:35rem;
+    font-family: "Teko", sans-serif;
+margin-bottom: 100px;
     @include mobile {
       gap: 20px;
       text-align: center;
@@ -45,9 +69,12 @@
 
   .formContainer {
     flex: 1;
+    gap:10;
     position: relative;
     margin-right: 80px;
-    max-width: 35rem;
+    margin-top: 13.5rem;
+    max-width: 25rem;
+    // height: fit-content;
     
     @include mobile {
       padding: 50px;
@@ -65,19 +92,26 @@
     form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      // gap: 20px;
 
       input,
       textarea {
         padding: 20px;
-        background-color: transparent;
+        // background-color: blue;
         border: 1px solid white;
-        color: white;
+        color: black;
         border-radius: 5px;
 
         @include mobile {
           padding: 10px;
         }
+      }
+      select, option{
+        padding: .5rem;
+        color:black;
+        font-size: 1.5rem;
+        font-family: teko,sans-serif;
+        background-color: aqua;
       }
 
       button {

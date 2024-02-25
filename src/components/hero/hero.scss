@@ -1,11 +1,13 @@
 @import "../../app.scss";
 
+
 .hero {
  color:#222233;
   height: calc(100vh - 100px);
   overflow: hidden;
   background: none;
   position: relative;
+  font-weight: 900;
 
   .video{
     height: 100vh;
@@ -17,13 +19,50 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    
+    h1 {
+      max-width: fit-content;
+      background: rgb(186, 167, 167,0.3) ; /* Adjust opacity here (0.5 in this case) */
+      background-size: cover; /* You can adjust this property as needed */
+      font-family: teko,sans-serif;
+    }
 
+    .textImg{
+      height: 100%;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      .to{
+        position: relative;
+        top:3rem;
+        left:1rem;
+        width: 12rem;
+      }
+    }
+    img{
+      display: inline;
+      width:21rem;
+      height: 80%;
+    }
+    .div1{
+      
+      height: 33%;
+        
+       
+    }
+    .div2{
+        height:33%;
+    }
+    .div3{
+        height: 33%;
+    }
     .textContainer {
       width: 50%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
       gap: 40px;
       
 
@@ -62,9 +101,7 @@
         }
       }
 
-      img {
-        width: 50px;
-      }
+      
     }
   }
 

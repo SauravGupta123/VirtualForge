@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import bikeImg from '../../../public/aboutPic.jpg'
+import bikeImg from '../../../public/about1.jpg'
 import skate from '../../../public/skate.jpg'
 import custom from '../../../public/customize.jpg'
 
