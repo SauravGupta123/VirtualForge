@@ -48,16 +48,16 @@ const sliderVariants = {
 
 const Hero = () => {
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     const textImgElement = document.querySelector('.textImg');
-  //     if (textImgElement) {
-  //       textImgElement.remove();
-  //     }
-  //   }, 3000); // 48000 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const textImgElement = document.querySelector('.textImg');
+      if (textImgElement) {
+        textImgElement.remove();
+      }
+    }, 48000); // 48000 seconds
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="hero">
       
