@@ -15,7 +15,7 @@ const App = () => {
       <Cursor />
       <section className="homepage" id="Homepage">
         <video src={video} autoPlay muted className="video" />
-        <Navbar/>
+        <Navbar />
         <Hero className="hero" />
       </section>
 
@@ -24,12 +24,12 @@ const App = () => {
       {/* <section id="Services">
         <Parallax type="services" />
       </section> */}
-      
+
       <section className="zidx" id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-        <Portfolio />
-      
+      <Portfolio />
+
       <section className="zidx" id="Contact">
         <Contact />
       </section>
@@ -38,12 +38,12 @@ const App = () => {
     <Test/> */}
 
 
-    <section className="services" id="services">
+      <section className="services" id="services">
         <Services />
-        
+
       </section>
 
-    
+
     </div>
   );
 };
