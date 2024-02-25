@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import img from '../../../public/aboutPic.jpg'
+import ubisoft from '../../../public/ubisoft.svg'
 
 const variants = {
   initial: {
@@ -49,26 +51,54 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="contact"
+      className="contact  justify-evenly"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Riders Republic™</motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2>UBISOFT</h2>
+      <motion.div className="textContainer p-7 mt-12" variants={variants}>
+
+        <motion.h1 className="mb-10" variants={variants}>Riders Republic™</motion.h1>
+
+
+        <motion.div className="wrapper flex flex-row ">
+          <motion.div className="imgContainer" whileHover={{scale:1.22}} transition={{duration:0.2}} variants={variants}>
+            <img className="poster" src={img} />
+          </motion.div>
+
+          <motion.div className="gameDetails flex flex-col content-evenly ml-12 text-5xl gap-6 pt-8">
+            <motion.div className="item" variants={variants}>
+              <h2 className="inline-block">UBISOFT</h2>
+              
+              
+            </motion.div>
+            <motion.div className="item rating rating-half" variants={variants}>
+
+              <input type="radio" name="rating-10" className="rating-hidden" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-1"  />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" className="bg-yellow-500 mask mask-star-2 mask-half-2" />
+                <span className="text-sm place-self-end mt-1">4.5/5</span>
+            </motion.div>
+            <motion.div className="item" variants={variants}>
+              <h2>$39.99</h2>
+            </motion.div>
+
+            <motion.div className="item bg-green-600 text-lg text-white p-3 rounded font-bold cursor-pointer" variants={variants}>
+              <h2>Start Free Trial</h2>
+            </motion.div>
+          </motion.div>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>$39.99</h2>
-          {/* <span>Hello street New York</span> */}
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
-        </motion.div>
+
       </motion.div>
-      <div className="formContainer">
+      <div className="formContainer mt-80 h-fit  flex flex-col">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
@@ -99,6 +129,7 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
+          className="h-full  flex flex-col gap-9"
           ref={formRef}
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
