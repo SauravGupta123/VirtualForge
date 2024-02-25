@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Dare from "../../../public/dare.png"
 import To from "../../../public/to.png"
 import Ride from "../../../public/ride.png"
-import The from "../../../public/the.png"
+import The from "../../../public/The.png"
 import Wild from "../../../public/wild.png"
 import { useEffect } from "react";
 
@@ -54,7 +54,7 @@ const Hero = () => {
       if (textImgElement) {
         textImgElement.remove();
       }
-    }, 48000); // 48000 seconds
+    }, 50050); // 48000 seconds
 
     return () => clearTimeout(timer);
   }, []);
