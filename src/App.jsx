@@ -38,7 +38,7 @@ const App = () => {
     <Test/> */}
 
 
-    <section>
+    <section className="services" id="services">
         <Services />
         
       </section>
