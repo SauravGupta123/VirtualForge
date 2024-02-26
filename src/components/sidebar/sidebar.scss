@@ -1,4 +1,8 @@
 @import "../../app.scss";
+svg{
+  margin-left: 13px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,7 @@
       width: 200px;
     }
 
+   
     .links {
       position: absolute;
       width: 100%;

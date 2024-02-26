@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import "../sidebar.scss";
 const ToggleButton = ({ setOpen }) => {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
@@ -12,6 +12,7 @@ const ToggleButton = ({ setOpen }) => {
             closed: { d: "M 2 2.5 L 20 2.5" },
             open: { d: "M 3 16.5 L 17 2.5" },
           }}
+          className="margin"
         />
         <motion.path
           strokeWidth="3"

@@ -8,6 +8,7 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import video from '../public/video.mp4'
+import News from "./components/News/News";
 const App = () => {
   return (
     <div>
@@ -28,7 +29,12 @@ const App = () => {
       <section className="zidx" id="Portfolio">
         <Parallax type="portfolio" />
       </section>
+
       <Portfolio />
+
+      <section className="news zidx">
+        <News/>
+      </section>
 
       <section className="zidx" id="Contact">
         <Contact />
@@ -40,7 +46,6 @@ const App = () => {
 
       <section className="services" id="services">
         <Services />
-
       </section>
 
 

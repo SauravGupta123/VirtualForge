@@ -6,8 +6,16 @@
   margin: auto;
   display: flex;
   font-family: teko,sans-serif;
-    
 
+  @include mobile{
+    background-color: blue;
+  }
+    
+.ubisoft{
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
   
   // align-items: center;
   // gap: 50px;
@@ -23,6 +31,10 @@
 .imgContainer{
   width:20rem;
   height:25em;
+  
+}
+@include mobile{
+  width: 100%;
 }
   .poster{
     height: 100%;
@@ -45,12 +57,12 @@
     // margin-bottom: 100px;
    height:35rem;
     font-family: "Teko", sans-serif;
-margin-bottom: 100px;
+     margin-bottom: 100px;
     @include mobile {
       gap: 20px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      margin-top: 700px;
     }
 
     h1 {
@@ -77,8 +89,10 @@ margin-bottom: 100px;
     // height: fit-content;
     
     @include mobile {
+   
       padding: 50px;
       width: 100%;
+    
     }
 
 
@@ -103,7 +117,7 @@ margin-bottom: 100px;
         border-radius: 5px;
 
         @include mobile {
-          padding: 10px;
+          padding: 1px;
         }
       }
       select, option{
