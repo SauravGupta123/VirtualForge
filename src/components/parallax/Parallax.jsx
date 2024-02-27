@@ -16,6 +16,7 @@ const Parallax = ({ type }) => {
   return (
     <div
       className="parallax"
+ 
       ref={ref}
       style={{
         background:
@@ -25,13 +26,13 @@ const Parallax = ({ type }) => {
       }}
     >
 
-      <div className="heroText">
+      <div  className="heroText">
 
-      <motion.h1 style={{ y: yText }}>
+      <motion.h1 whileHover={{ color: "orange" }} style={{ y: yText }}>
         Explore 
       </motion.h1>
 
-      <motion.h3 style={{ y: yBg }}>
+      <motion.h3 classname="sub-heading" whileHover={{ color: "orange" }} style={{ y: yBg }}>
          "Electrify your gaming Experience"
       </motion.h3>
       </div>

@@ -36,10 +36,11 @@ return(
       whileInView="animate"
       ref={ref}
       animate={isInView}
+      id="Contact Us"
 
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>
+        <p className="header">
               Skate Battle Comptete
           <br /> and Earn
         </p>
@@ -47,21 +48,22 @@ return(
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src={promoImg} alt="" />
-          <div className="elements">
+          <motion.div className="img" whileHover={{scale:1.05}} transition={{duration:0.2}} variants={variants} >
+          <img src={promoImg}  alt="" />
+          </motion.div>
+          <div className="elements ml-20">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Join The Community</motion.b> 
+            <motion.b whileHover={{color:"orange"}}>Join Our </motion.b> 
+            <motion.b whileHover={{color:"orange"}}> Community</motion.b> 
           </h1>
-          <button>Discord</button>
+          <button className="text-black font-semibold">Discord</button>
           </div>
         </div>
-        <div className="title">
-         
-        </div>
+       
       </motion.div>
 
 
-      <motion.div className="social "
+      <motion.div className="social" id="Social Links"
         variants={variants}
 
       > 
@@ -77,28 +79,51 @@ return(
       })}
         </motion.div>
    
-        <motion.div className="footer p-10 bg-gradient-gradient text-neutral-content ">
+        <motion.div className="footer p-10 bg-gradient-gradient text-neutral-content h-44">
+      
   <nav>
-    <h6 className="footer-title">Services</h6> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav> 
+    <h6 className="footer-title">
+      <motion.span whileHover={{ color: "orange" }}>Services</motion.span>
+    </h6>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Branding
+    </motion.a>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Design
+    </motion.a>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Marketing
+    </motion.a>
+  </nav>
   <nav>
-    <h6 className="footer-title">Company</h6> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav> 
+    <h6 className="footer-title">
+      <motion.span whileHover={{ color: "orange" }}>Company</motion.span>
+    </h6>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      About us
+    </motion.a>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Contact
+    </motion.a>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Jobs
+    </motion.a>
+  </nav>
   <nav>
-    <h6 className="footer-title">Legal</h6> 
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <h6 className="footer-title">
+      <motion.span whileHover={{ color: "orange" }}>Legal</motion.span>
+    </h6>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Terms of use
+    </motion.a>
+    <motion.a className="link link-hover" whileHover={{ color: "orange" }}>
+      Privacy policy
+    </motion.a>
   </nav>
 </motion.div>
+
+ 
+
 
     </motion.div>
   );

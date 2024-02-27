@@ -14,7 +14,7 @@ const variants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: .5,
       staggerChildren: 0.1,
     },
   },
@@ -55,6 +55,7 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       whileInView="animate"
+      id="Purchase"
     >
       <motion.div className="textContainer p-7 mt-12" variants={variants}>
 
@@ -68,7 +69,7 @@ const Contact = () => {
 
           <motion.div className="gameDetails flex flex-col content-evenly ml-12 text-5xl gap-6 pt-8">
             <motion.div className="item" variants={variants}>
-              <h2 className="inline-block">UBISOFT</h2>
+              <h2 className="inline-block ubisoft">UBISOFT</h2>
               
               
             </motion.div>
@@ -91,7 +92,7 @@ const Contact = () => {
               <h2>$39.99</h2>
             </motion.div>
 
-            <motion.div className="item bg-green-600 text-lg text-white p-3 rounded font-bold cursor-pointer" variants={variants}>
+            <motion.div className="item bg-green-600 text-lg text-white p-3 rounded font-bold cursor-pointer w-fit" variants={variants}>
               <h2>Start Free Trial</h2>
             </motion.div>
           </motion.div>
@@ -103,7 +104,7 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay:2 , duration: 3 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -111,7 +112,6 @@ const Contact = () => {
               fill="none"
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -134,7 +134,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 1, duration: 1}}
         >
           <select required name="country">
             <option value="" disabled selected>Select Country</option>
@@ -155,7 +155,7 @@ const Contact = () => {
             {/* Add more options as needed */}
           </select>
           {/* <textarea rows={8} placeholder="Message" name="message"/> */}
-          <button>Purchase</button>
+          <button className="text-black font-semibold ">Purchase</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>

@@ -95,14 +95,7 @@ const Hero = () => {
         </motion.div>
 
 
-          {/* <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div> */}
-
-          {/* scroll image of the screen */}
+        
           
         </motion.div>
       </div>
