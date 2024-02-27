@@ -50,7 +50,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button style={{color:"black", fontWeight:900}}>See Demo</button>
           </motion.div>
         </div>
       </div>

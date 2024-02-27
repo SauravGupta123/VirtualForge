@@ -32,6 +32,10 @@
   width:20rem;
   height:25em;
   
+  @include mobile{
+    height:18rem
+  }
+  
 }
 @include mobile{
   width: 100%;
@@ -41,7 +45,11 @@
     width:100%;
   
   }
-
+.gameDetails{
+  @include mobile{
+    margin-left: 0px;
+  }
+}
   @include mobile {
     width: 100%;
     padding: 10px;

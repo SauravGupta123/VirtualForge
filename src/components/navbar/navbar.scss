@@ -8,7 +8,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap:5px;
     height: 100%;
 
     @include mobile {
@@ -17,8 +17,19 @@
     }
 
     span {
-      font-weight: bold;
-
+      // margin-top: 10px;
+      font-size:30px;
+     font-family: teko, 'Sans Serif';
+      font-weight: 900;
+      color: Black;
+      .logo{
+        height: 30px;
+        width: 30px;
+        img{
+          height: 100%;
+          width:100%;
+        }
+      }
       @include mobile {
         display: none;
       }

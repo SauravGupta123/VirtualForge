@@ -9,9 +9,9 @@ function Card({heading, image,news, handleClick}) {
   <figure><img src={image} alt="car!"/></figure>
   <div className="card-body ">
     <h2 className="card-title  font-bold">{heading}</h2>
-    <p className='text-OrangeX'>{news}</p>
+    <p className=''>{news}</p>
     <div className="card-actions justify-end">
-      <button onClick={handleClick} className="btn btn-orange">Read More</button>
+      <button onClick={handleClick} className="btn bg-OrangeX text-slate-900">Read More</button>
     </div>
   </div>
 </div>
