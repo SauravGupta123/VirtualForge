@@ -1,0 +1,27 @@
+@import "../../app.scss";
+
+h1{
+    @include mobile{
+        font-size: 3rem;
+    }
+}
+.cardContainer{
+    @include mobile{
+    display:flex;
+    flex-direction: column;
+    height: 35rem;
+    width: fit-content;
+    overflow: scroll;
+
+}
+
+.individualCard{
+    @include mobile{
+        width:fit-content;
+        height: fit-content;
+        position: relative;
+       right:50px;
+    }
+}
+
+}

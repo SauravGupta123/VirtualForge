@@ -1,11 +1,12 @@
 import React from 'react'
+import "./news.scss";
 
 function Card({heading, image,news, handleClick}) {
 
     
     // console.log(heading)
   return (
-    <div className="card w-1/4 glass h-fit pt-6">
+    <div className=" card w-1/4 glass h-fit pt-6  individualCard">
   <figure><img src={image} alt="car!"/></figure>
   <div className="card-body ">
     <h2 className="card-title  font-bold">{heading}</h2>

@@ -26,9 +26,13 @@
     margin-bottom:1rem;
     gap: 20px;
     max-width: fit-content;
+    @include mobile{
+      margin-left: 9rem;
+    }
     // justify-content: ;
     .socialContainer {
       align-self: flex-end;
+      
     }
 
     img {
@@ -75,6 +79,9 @@
     font-style: normal;
     line-height:1;
     font-size: 6rem;
+    @include mobile{
+      font-size: 4rem;
+    }
     }
   }
   .titleContainer {
@@ -84,6 +91,7 @@
     align-items: flex-end;
 
     @include mobile {
+      
       width: 100%;
     }
 
@@ -119,8 +127,8 @@
         margin-left: 2rem;
 
         @include mobile {
-          width: 200px;
-          height: 50px;
+          width: 70%;
+          height: 50%;
         }
       }
 
@@ -129,7 +137,7 @@
         font-weight: 100;
 
         @include mobile {
-          font-size: 36px;
+          
         }
       }
 

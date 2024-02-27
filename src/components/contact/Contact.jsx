@@ -155,9 +155,9 @@ const Contact = () => {
             {/* Add more options as needed */}
           </select>
           {/* <textarea rows={8} placeholder="Message" name="message"/> */}
-          <button className="text-black font-semibold ">Purchase</button>
-          {error && "Error"}
-          {success && "Success"}
+          <button className="text-black font-extrabold" onClick={()=>{alert("Purchased SuccessFully")}}>Purchase</button>
+          {/* {error && "Error"}
+          {success && "Success"} */}
         </motion.form>
       </div>
     </motion.div>

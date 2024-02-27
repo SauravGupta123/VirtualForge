@@ -4,7 +4,7 @@ import Card from './Card';
 import news1 from "../../../public/news1.jpg"
 import news2 from "../../../public/news2.jpg"
 import news3 from "../../../public/news3.jpg"
-
+import "./news.scss";
 const News = () => {
     const [active, setisActive] = useState(false);
 
@@ -91,7 +91,7 @@ const News = () => {
                     <h1 className='w-fit font-fancy'>COMING SOON</h1>
                 </motion.div>
             </motion.div>
-            <motion.div className="flex p-10 gap-16 self-center ml-28" variants={cardVariants}>
+            <motion.div className="cardContainer flex p-10 gap-16 self-center ml-28" variants={cardVariants}>
                 {items.map((item, index) => (
                     <Card key={index} heading={item.heading} news={item.news} image={item.image} handleClick={handleClick} />
                 ))}

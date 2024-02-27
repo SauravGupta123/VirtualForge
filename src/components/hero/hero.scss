@@ -33,17 +33,27 @@
       display: flex;
       flex-direction: column;
       // justify-content: space-between;
+      
       .to{
         position: relative;
         top:3rem;
         left:1rem;
         width: 12rem;
+        @include mobile{
+          width: 4rem;
+          height: 3rem;
+        }
       }
     }
     img{
       display: inline;
       width:21rem;
       height: 80%;
+      
+      @include mobile{
+        height:6rem;
+        width:4rem;
+      }
     }
     .div1{
       
@@ -56,6 +66,9 @@
     }
     .div3{
         height: 33%;
+        @include mobile{
+          margin-top: 1rem;
+        }
     }
     .textContainer {
       width: 50%;
@@ -67,7 +80,7 @@
       
 
       @include mobile {
-        height: 50%;
+        height: 70%;
         width: 100%;
         gap: 20px;
         align-items: center;
@@ -104,6 +117,7 @@
       
     }
   }
+ 
 
   .imageContainer {
     height: 100%;

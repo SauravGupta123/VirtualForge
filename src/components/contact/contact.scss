@@ -48,6 +48,7 @@
 .gameDetails{
   @include mobile{
     margin-left: 0px;
+    font-size: 2rem;
   }
 }
   @include mobile {
@@ -70,7 +71,8 @@
       gap: 20px;
       text-align: center;
       align-items: center;
-      margin-top: 700px;
+      margin-top: 2rem;
+      margin-bottom: 0px;
     }
 
     h1 {
@@ -79,6 +81,7 @@
 
       @include mobile {
         font-size: 36px;
+        
       }
     }
 
@@ -97,7 +100,7 @@
     // height: fit-content;
     
     @include mobile {
-   
+      margin-top:0px;
       padding: 50px;
       width: 100%;
     

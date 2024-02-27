@@ -3,6 +3,7 @@ import "./services.scss";
 import promoImg from '../../../public/community.jpg'
 import { motion, useInView } from "framer-motion";
 
+
 const variants = {
   initial: {
     x: -100,
@@ -19,7 +20,7 @@ const variants = {
     },
   },
 };
-let links= [{img:"/facebook.png"},{img:"/instagram.png"},{img:"/youtube.png"},{img:"/dribbble.png"}]
+let links= [{img:"../../../public/facebook.png"},{img:"../../../public/instagram.png"},{img:"../../../public/youtube.png"},{img:"../../../public/dribbble.png"}]
 
 const Services = () => {
   const ref = useRef();
